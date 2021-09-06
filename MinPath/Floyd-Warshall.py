@@ -15,11 +15,11 @@ n = 4
 # for i in range(n):
 #     matrix.append(list(map(int, input().split())))
 print(*matrix)
-for i in range(n):
-    for j in range(n):
+for j in range(n):
+    for i in range(n):
         if i != j:
             for k in range(n):
                 if j != k:
-                    matrix[i][j] = min(matrix[i][j], matrix[i][k] + matrix[k][j])
+                    matrix[i][k] = min(matrix[i][k], matrix[i][j] + matrix[j][k])
 
 print(*matrix)

@@ -6,6 +6,7 @@
 
 using namespace std;
 
+//Dijkstra's algo has O(n^2) complexity
 map<unsigned, double> Dijkstra(unsigned N, double **input, unsigned from)
 {
     set<unsigned> unused = {0};

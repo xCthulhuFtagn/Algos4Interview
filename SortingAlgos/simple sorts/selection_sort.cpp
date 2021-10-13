@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//O(n^2)
 template<typename T>
 void SelectionSort(vector<T>& input){
     auto runner = input.end();

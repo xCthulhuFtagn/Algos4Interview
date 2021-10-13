@@ -3,6 +3,7 @@
 #include <algorithm>
 using namespace std;
 
+
 static vector<int> a = {4, 3, 2, 1};
 
 template<typename RandomIt>
@@ -18,6 +19,7 @@ void QuickSort(RandomIt begin, RandomIt end){
     if(end - mid > 1) QuickSort(mid + 1, end);
 }
 
+//O(n) or O(n*log(n)) or O(n^2)
 template<typename T>
 void QuickSort(vector<T>& a, unsigned start, unsigned end){
     unsigned mid = (start + end)/2;
